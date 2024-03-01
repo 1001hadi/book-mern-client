@@ -40,7 +40,7 @@ function EditBook() {
     };
     setLoading(true);
     axios
-      .put(`http://localhost:8888/books/${id}`, data)
+      .put(`https://book-shelf-app-t783.onrender.com/books/${id}`, data)
       .then(() => {
         setLoading(false);
         enqueueSnackbar("Book Updated Successfully", { variant: "success" });
